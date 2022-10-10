@@ -233,7 +233,7 @@ register_poc(DemoPOC)
         self.exclude = ["Accept-Encoding", "Sec-Ch-Ua", "Host", "Sec-Fetch-Site", "Sec-Fetch-Mode", "Sec-Fetch-User",
                         "Sec-Fetch-Dest", "Sec-Ch-Ua-Mobil", "Sec-Ch-Ua-Platform", "Sec-Ch-Ua-Mobile", "sec-ch-ua",
                         "sec-ch-ua-mobile", "sec-ch-ua-platform", ]
-        if x.getSource().text == 'poc-template':
+        if x.getSource().text == 'poc-pocsuite3':
             if self.getMethod == "GET":
                 self.path = str(self.getUrl).replace(
                     str(urlparse(str(self.getUrl)).scheme) + "://" + str(urlparse(str(self.getUrl)).netloc), "")
