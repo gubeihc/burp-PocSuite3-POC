@@ -91,7 +91,7 @@ class DemoPOC(POCBase):
         }
         output = Output(self)
         url=self.urlstr(self.url)
-        url = url + str("%s")
+        url = url + str(r"%s")
         try:
             response = requests.get(url,headers=headers)  
             %s
@@ -165,7 +165,7 @@ class DemoPOC(POCBase):
         headers = {%s}
         output = Output(self)
         url=self.urlstr(self.url)
-        url = url + str("%s")
+        url = url + str(r"%s")
         data=%s
         try:
             response = requests.post(url, headers=headers,%s=data)
